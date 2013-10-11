@@ -1,4 +1,5 @@
-require File.dirname(__FILE__) + "/../../lib/alchemy_picture_optim_hook"
+$LOAD_PATH.unshift File.expand_path('../../../lib', __FILE__)
+require File.dirname(__FILE__) + "/../../lib/alchemy_cms_picture_optim"
 
 ['test.jpg', 'test.png'].each do |f|
   file = File.new("uploads/pictures/#{f}")
